@@ -1,0 +1,18 @@
+// Mixins here
+
+.display-flex(@justify, @align) {
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.custom-button(@btn-color: @button-bg, @width:100px, @height, @font-color:white){
+    display:block;
+    background-color:@btn-color;
+    cursor: pointer;
+    width:@width;
+    height:@height;
+    font-size:2rem;
+    border-radius:15px;
+    color:@font-color;
+}
