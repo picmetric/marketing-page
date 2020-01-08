@@ -1,9 +1,10 @@
 // Mixins here
 
-.display-flex(@justify, @align) {
+.display-flex(@justify, @align, @direction) {
     display:flex;
     justify-content:@justify;
     align-items:@align;
+    flex-direction:@direction;
 }
 
 .custom-button(@btn-color: @button-bg, @width:100px, @height, @font-color:white){
