@@ -3,10 +3,20 @@ header{
     background: @nav-bg;
     h1{
         margin-left: 8.5%;
+        @media @tablet{
+            font-size:3.5rem;
+        }
     }
     img{
         margin-left:0.5%;
         height: 75px;
+    }
+    @media @tablet{
+        .display-flex(space-between, center, row);
+        width:100%;
+    }
+    @media @phone{
+        width:100%;
     }
 }
 
@@ -19,6 +29,10 @@ header{
         letter-spacing: 0.1rem;
         text-decoration:none;
         font-size:1.5rem;
+        @media @tablet{
+            font-size:1.1rem;
+        }
+
     }
     button{
         display:block;
@@ -29,6 +43,9 @@ header{
         font-size:1rem;
         border-radius:15px;
         color:@white;
+        @media @tablet{
+            font-size:0.9rem;
+        }
     }
     
 }

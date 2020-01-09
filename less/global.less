@@ -41,4 +41,15 @@ img{
 
 .full-page-container {
     margin: 0 5%;
+    // background:green;
+    @media @tablet{
+        // background: @dark-blue;
+        .display-flex(center, center, column);
+        flex-wrap:wrap;
+        // border:3px solid green;
+    }
+    @media @phone{
+        background:gray;
+        margin:0%;
+    }
 }

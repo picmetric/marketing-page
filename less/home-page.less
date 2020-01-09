@@ -5,17 +5,31 @@
     position:relative;
     margin-top:5%;
     margin-right:3%;
-    width:280%;
+    width:275%;
     height: 100vh;
+    @media @tablet{
+        .display-flex(center, center, column);
+        
+        background-size: cover;
+        width:100%;
+        margin:auto 0;
+        
+    }
     .top-content-text{
         h2{
-            font-size:6.5rem;
+            font-size:6.1rem;
+            background:transparent;
+            // opacity: 0.6;
         }
         text-align:center;
         color:@orange; 
         padding-top:5%;
         margin-top:225px;
+        @media @tablet{
+            margin-top:10px;
+        }
     }
+
     button{
         background-color:@orange;
         cursor: pointer;
@@ -37,6 +51,9 @@
 }
 .top-and-bottom-content{
     .display-flex(space-around, center, row);
+    @media @tablet{
+        flex-flow: column nowrap;
+    }
 
 }
 .product-content{
@@ -45,22 +62,41 @@
         max-width:40%;
         max-height:15%;
         border-radius:2rem;
-        
+        @media @tablet{
+            margin-left:30%;
+            text-align:center;
+        }
     }
     p{
         font-size:2rem;
+        @media @tablet{
+            text-align:center;
+        }
+    }
+    @media @tablet{
+        margin-top:2%;
     }
 }
 .technology-content{
-    margin-top:20%;
+    margin-top:5%;
     img{
         max-width:40%;
         max-height:15%;
         border-radius:2rem;
         margin-left:60%;
+        @media @tablet{
+            margin-left:30%;
+            text-align:center;
+        }
     }
     p{
         font-size:2rem;
+        @media @tablet{
+            text-align:center;
+        }
+    }
+    @media @tablet{
+        margin-top:2%;
     }
 }
 
@@ -68,6 +104,10 @@
     h2{
         margin-left:2%;
         margin-bottom:2%;
+        @media @tablet{
+            text-align:center;
+            margin-left:0%;
+        }
     }
     
 }
@@ -75,6 +115,10 @@
     h2{
         margin-left:65%;
         margin-bottom:2%;
+        @media @tablet{
+            text-align:center;
+            margin-left:0%;
+        }
     }
     
 }
