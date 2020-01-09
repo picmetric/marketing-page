@@ -20,7 +20,7 @@
             .display-flex(space-evenly, center, row);
             // flex-wrap:auto;
             align-items:center;
-            width:275px;
+            width:269px;
             text-align:left;
             border: 1px solid black;
             border-radius: 20px;
@@ -30,9 +30,30 @@
             background-color:@orange;
             text-decoration: none;
             color:@white;
+            @media @tablet{
+                width:269px;
+                height:150px;
+            }
+            @media @phone{
+                background-color:@white;
+                border-radius:0px;
+                p{
+                    color:black;
+                }
+                h3{
+                    color:black;
+                }
+                border-bottom: 2px solid gray;
+            }
             img{
                 border-radius: 50%;
                 width:50%;
+                border-color:white;
+            }
+            .reverse{
+                @media @phone{
+                    flex-direction:row-reverse;
+                }
             }
         }
     }

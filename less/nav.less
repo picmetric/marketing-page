@@ -6,6 +6,10 @@ header{
         @media @tablet{
             font-size:3.5rem;
         }
+        @media @phone{
+            font-size:3rem;
+            padding-right:3%;
+        }
     }
     img{
         margin-left:0.5%;
@@ -32,6 +36,9 @@ header{
         @media @tablet{
             font-size:1.1rem;
         }
+        @media @phone{
+            font-size: .9rem;
+        }
 
     }
     button{
@@ -43,9 +50,18 @@ header{
         font-size:1rem;
         border-radius:15px;
         color:@white;
+        
         @media @tablet{
             font-size:0.9rem;
         }
+        @media @phone{
+            width:75px;
+            height:30px;
+            font-size:0.7rem;
+        }
     }
-    
+    button:hover{
+        background-color:@white;
+        color:@orange;
+    }
 }

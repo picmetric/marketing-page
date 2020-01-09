@@ -176,7 +176,6 @@ img {
 }
 @media ( max-width: 500px ) {
   .full-page-container {
-    background: gray;
     margin: 0%;
   }
 }
@@ -193,6 +192,12 @@ header h1 {
 @media (max-width: 1000px) {
   header h1 {
     font-size: 3.5rem;
+  }
+}
+@media ( max-width: 500px ) {
+  header h1 {
+    font-size: 3rem;
+    padding-right: 3%;
   }
 }
 header img {
@@ -232,6 +237,11 @@ header img {
     font-size: 1.1rem;
   }
 }
+@media ( max-width: 500px ) {
+  .nav-and-button a {
+    font-size: 0.9rem;
+  }
+}
 .nav-and-button button {
   display: block;
   background-color: #FF331F;
@@ -246,6 +256,17 @@ header img {
   .nav-and-button button {
     font-size: 0.9rem;
   }
+}
+@media ( max-width: 500px ) {
+  .nav-and-button button {
+    width: 75px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+}
+.nav-and-button button:hover {
+  background-color: #FBFBFF;
+  color: #FF331F;
 }
 .top-content {
   background-image: url(../img/mainphoto2.jpg);
@@ -413,7 +434,7 @@ header img {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  width: 275px;
+  width: 269px;
   text-align: left;
   border: 1px solid black;
   border-radius: 20px;
@@ -423,9 +444,35 @@ header img {
   text-decoration: none;
   color: #FBFBFF;
 }
+@media (max-width: 1000px) {
+  .main-content-about .team .teammate {
+    width: 269px;
+    height: 150px;
+  }
+}
+@media ( max-width: 500px ) {
+  .main-content-about .team .teammate {
+    border: 0px solid white;
+    background-color: #FBFBFF;
+    border-radius: 0px;
+    border-bottom: 2px solid gray;
+  }
+  .main-content-about .team .teammate p {
+    color: black;
+  }
+  .main-content-about .team .teammate h3 {
+    color: black;
+  }
+}
 .main-content-about .team .teammate img {
   border-radius: 50%;
   width: 50%;
+  border-color: white;
+}
+@media ( max-width: 500px ) {
+  .main-content-about .team .teammate .reverse {
+    flex-direction: row-reverse;
+  }
 }
 footer {
   text-align: center;
