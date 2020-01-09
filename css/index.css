@@ -434,7 +434,7 @@ header img {
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
-  width: 269px;
+  width: 290px;
   text-align: left;
   border: 1px solid black;
   border-radius: 20px;
@@ -452,9 +452,9 @@ header img {
 }
 @media ( max-width: 500px ) {
   .main-content-about .team .teammate {
-    border: 0px solid white;
     background-color: #FBFBFF;
     border-radius: 0px;
+    border: 0;
     border-bottom: 2px solid gray;
   }
   .main-content-about .team .teammate p {
@@ -468,11 +468,6 @@ header img {
   border-radius: 50%;
   width: 50%;
   border-color: white;
-}
-@media ( max-width: 500px ) {
-  .main-content-about .team .teammate .reverse {
-    flex-direction: row-reverse;
-  }
 }
 footer {
   text-align: center;
