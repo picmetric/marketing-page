@@ -1,0 +1,124 @@
+.top-content {
+    background-image: url(../img/mainphoto2.jpg);
+    background-size: cover;
+    text-align:center;
+    position:relative;
+    margin-top:5%;
+    margin-right:3%;
+    width:275%;
+    height: 100vh;
+    @media @tablet{
+        .display-flex(center, center, column);
+        
+        background-size: cover;
+        width:100%;
+        margin:auto 0;
+        
+    }
+    .top-content-text{
+        h2{
+            font-size:6.1rem;
+            background:transparent;
+            // opacity: 0.6;
+        }
+        text-align:center;
+        color:@orange; 
+        padding-top:5%;
+        margin-top:225px;
+        @media @tablet{
+            margin-top:10px;
+        }
+    }
+
+    button{
+        background-color:@orange;
+        cursor: pointer;
+        width:200px;
+        height:40px;
+        font-size:2.5rem;
+        border-radius:30px;
+        color:@white;
+        margin-top:10%;   
+    }
+    button:hover{
+        background-color:@white;
+        color:@orange;
+    }
+    
+}
+.product-content{
+    margin-top:0;
+}
+.top-and-bottom-content{
+    .display-flex(space-around, center, row);
+    @media @tablet{
+        flex-flow: column nowrap;
+    }
+
+}
+.product-content{
+    margin-top:12%;
+    img{
+        max-width:40%;
+        max-height:15%;
+        border-radius:2rem;
+        @media @tablet{
+            margin-left:30%;
+            text-align:center;
+        }
+    }
+    p{
+        font-size:2rem;
+        @media @tablet{
+            text-align:center;
+        }
+    }
+    @media @tablet{
+        margin-top:2%;
+    }
+}
+.technology-content{
+    margin-top:5%;
+    img{
+        max-width:40%;
+        max-height:15%;
+        border-radius:2rem;
+        margin-left:60%;
+        @media @tablet{
+            margin-left:30%;
+            text-align:center;
+        }
+    }
+    p{
+        font-size:2rem;
+        @media @tablet{
+            text-align:center;
+        }
+    }
+    @media @tablet{
+        margin-top:2%;
+    }
+}
+
+.title-picture{
+    h2{
+        margin-left:2%;
+        margin-bottom:2%;
+        @media @tablet{
+            text-align:center;
+            margin-left:0%;
+        }
+    }
+    
+}
+.title-picture2{
+    h2{
+        margin-left:65%;
+        margin-bottom:2%;
+        @media @tablet{
+            text-align:center;
+            margin-left:0%;
+        }
+    }
+    
+}

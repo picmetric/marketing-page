@@ -1,0 +1,67 @@
+header{
+    .display-flex(space-between, center, row);
+    background: @nav-bg;
+    h1{
+        margin-left: 8.5%;
+        @media @tablet{
+            font-size:3.5rem;
+        }
+        @media @phone{
+            font-size:3rem;
+            padding-right:3%;
+        }
+    }
+    img{
+        margin-left:0.5%;
+        height: 75px;
+    }
+    @media @tablet{
+        .display-flex(space-between, center, row);
+        width:100%;
+    }
+    @media @phone{
+        width:100%;
+    }
+}
+
+.nav-and-button {
+    .display-flex(space-evenly, center, row);
+    margin: 0 0.5%;
+    a {
+        font-family: @body_font;
+        color: @black;
+        letter-spacing: 0.1rem;
+        text-decoration:none;
+        font-size:1.5rem;
+        @media @tablet{
+            font-size:1.1rem;
+        }
+        @media @phone{
+            font-size: .9rem;
+        }
+
+    }
+    button{
+        display:block;
+        background-color:@button-bg;
+        cursor: pointer;
+        width:100px;
+        height:30px;
+        font-size:1rem;
+        border-radius:15px;
+        color:@white;
+        
+        @media @tablet{
+            font-size:0.9rem;
+        }
+        @media @phone{
+            width:75px;
+            height:30px;
+            font-size:0.7rem;
+        }
+    }
+    button:hover{
+        background-color:@white;
+        color:@orange;
+    }
+}

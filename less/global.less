@@ -1,0 +1,55 @@
+*{
+    box-sizing:border-box;
+    
+}
+
+html{
+    font-size:62.5%;
+}
+
+html, body{
+    font-family: @body_font;
+    background: @white;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: @header_font;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size:3.2rem;
+}
+
+h3{
+    font-size:2rem;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.full-page-container {
+    margin: 0 5%;
+    // background:green;
+    @media @tablet{
+        // background: @dark-blue;
+        .display-flex(center, center, column);
+        flex-wrap:wrap;
+        // border:3px solid green;
+    }
+    @media @phone{
+        // background:gray;
+        margin:0%;
+    }
+}
